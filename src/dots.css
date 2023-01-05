@@ -1,0 +1,29 @@
+.react-any-slider-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.react-any-slider-dots__container {
+    display: flex;
+    transition: transform 0.5s ease-out;
+}
+
+.react-any-slider-dots__dot {
+    border-radius: 50%;
+    flex: 0 0 auto;
+    transition: transform 0.5s ease-out;
+    transform: scale(0.5);
+    opacity: 0.75;
+    background-color: white;
+}
+
+.react-any-slider-dots__dot--big {
+    transform: scale(1);
+}
+
+.react-any-slider-dots__dot--active {
+    opacity: 1;
+}
