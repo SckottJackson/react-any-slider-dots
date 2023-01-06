@@ -64,7 +64,7 @@ import { ReactAnySliderDots as Dots, reactSlickAdapter } from 'react-any-slider-
 export const MySlider: React.FC = () => {
     const config: Settings = {
         ...
-        appendDots: (dots) => <ReactAnySliderDots {...reactSlickAdapter(dots)} />,
+        appendDots: (dots) => <Dots {...reactSlickAdapter(dots)} />,
         ...
     };
     
