@@ -37,7 +37,7 @@ export const App = () => {
 Then use Dots in a slider:
 ```js
 import React from 'react'
-import Dots from 'react-any-slider-dots'
+import { ReactAnySliderDots as Dots } from 'react-any-slider-dots'
 
 export const MySlider: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -51,6 +51,28 @@ export const MySlider: React.FC = () => {
                 dotsCount={dotsCount}
                 activeIndex={activeIndex}
             />
+        </div>
+    )
+```
+
+You can use adapter for ReactSlick slider:
+```js
+import React from 'react'
+import SlickSlider, { Settings } from 'react-slick'
+import { ReactAnySliderDots as Dots, reactSlickAdapter } from 'react-any-slider-dots'
+
+export const MySlider: React.FC = () => {
+    const config: Settings = {
+        ...
+        appendDots: (dots) => <ReactAnySliderDots {...reactSlickAdapter(dots)} />,
+        ...
+    };
+    
+    return (
+        <div className="SLIDER-CONTAINER" style={{ position: 'relative' }}>
+            <SlickSlider {...config}>
+                ...
+            </SlickSlider>
         </div>
     )
 ```

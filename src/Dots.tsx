@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-interface IProps {
-    dotsCount: number
-    activeIndex: number
+import { IReactAnySliderBaseProps } from './types'
 
+interface IProps extends IReactAnySliderBaseProps {
     visibleDotsCount?: number
     dotSize?: number
     dotGap?: number

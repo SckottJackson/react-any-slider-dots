@@ -1,10 +1,10 @@
 {
     "name": "example",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "private": true,
     "scripts": {
         "start": "parcel src/index.html",
-        "build": "rm -rf ../docs && parcel build src/index.html --dist-dir ../docs --public-url . --no-cache"
+        "build": "rm -rf ../docs && parcel build src/index.html --dist-dir ../docs --public-url . --no-cache --no-source-maps"
     },
     "devDependencies": {
         "@types/react": "^18.0.26",
@@ -12,7 +12,7 @@
         "parcel": "^2.8.2",
         "process": "^0.11.10",
         "react": "^18.2.0",
-        "react-any-slider-dots": "^1.0.2",
+        "react-any-slider-dots": "^1.1.0",
         "react-dom": "^18.2.0"
     }
 }

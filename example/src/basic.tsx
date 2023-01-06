@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ReactAnySliderDots from 'react-any-slider-dots'
+import { ReactAnySliderDots } from 'react-any-slider-dots'
 
 export const BasicExample: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0)
