@@ -1,6 +1,6 @@
 {
     "name": "react-any-slider-dots",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "React Slider Dots Component for any slider.",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
@@ -37,6 +37,9 @@
         "carousel",
         "carousel dots",
         "slick carousel",
+        "slick",
+        "slick slider",
+        "react slick",
         "instagram gallery",
         "carousel navigation",
         "image slider dots"
